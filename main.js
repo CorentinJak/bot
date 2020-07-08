@@ -2,10 +2,8 @@ const Discord = require('discord.js')
 const fs = require('fs');
 
 if (process.env.STATUS == 'prod') {
-    const {
-        prefix = process.env.PREFIX,
-            token = process.env.BOT_TOKEN
-    }
+    const prefix = process.env.PREFIX;
+    const token = process.env.BOT_TOKEN;
     console.log('Prod environnement')
 } else {
     const {
